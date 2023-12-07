@@ -6,6 +6,7 @@ import TacheListe from './components/tache'
 import { Inscription } from './pages/inscription'
 import Reinitial from './pages/reinitiel'
 import Dashboard from './pages/dashboard'
+import Accueil from './pages/accueil'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
+      <Route path='/' element={<Accueil/>} />
       <Route path='/connexion' element={<Connexion/>} />
       <Route path='/dashboard' element={<Dashboard />} />
       <Route path='/tacheListe' element={<TacheListe/>} />
