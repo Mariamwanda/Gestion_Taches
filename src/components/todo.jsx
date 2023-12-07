@@ -1,14 +1,14 @@
 import { useState } from "react";
-import TaskList from "../components/tache.jsx";
-import './Css/dashboard.css'
+import TaskList from "./tache.jsx";
+import './../pages/Css/todo.css'
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faCoffee, faAddressBook, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee, faAddressBook, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-library.add(faCoffee, faAddressBook, faCheck);
+library.add(faCoffee, faAddressBook, faPlus);
 
 
-function Dashboard(){
+function Todo(){
    
   const [todo, setTodo] = useState("");
     return (
@@ -28,13 +28,13 @@ function Dashboard(){
             }}
           />
           <button
-            className="h-full px-5 py-2 bg-[#333] text-white font-medium rounded-md"
+            className="h-full px-5 py-2 bg-[#111827] text-white font-medium rounded-md"
             onClick={() => {
             }}
           >
              
             Ajouter
-            <FontAwesomeIcon icon="check" />
+            <FontAwesomeIcon className="icon" icon="fa-solid fa-plus" />
           </button>
           
         </div>
@@ -46,4 +46,4 @@ function Dashboard(){
   
 }
 
-export default Dashboard;
+export default Todo;

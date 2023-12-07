@@ -6,21 +6,25 @@
 
 .Dashbord input{
   background: none;
-  border: 1px solid grey;
+  border: 1px solid #fff;
   outline: none;
   font-size: 1.3rem;
 }
 
 .Dashbord h1{
-  color: #333;
+  color: #111827;
 }
 
 .Dashbord .form{
-  width: 70%;
+  width: 100%;
   margin: auto;
   box-shadow: 3px 3px 10px gray;
   height: auto;
-  background-color: #ACC8E5;
+  background-color: #a78bfa;
   padding: 20px;
   border-radius: 20px/50px;
+}
+
+.Dashbord .icon{
+  margin-left: 10px;
 }

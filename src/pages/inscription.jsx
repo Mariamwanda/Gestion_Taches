@@ -1,85 +1,28 @@
-import {
-    Card,
-    Input,
-    Checkbox,
-    Button,
-    Typography,
-  } from "@material-tailwind/react";
-   
+import { Link } from "react-router-dom";
+import "./Css/inscris.css"
   export function Inscription() {
     return (
-       <Card color="transparent" shadow={false}>
-        <Typography variant="h4" color="blue-gray">
-          Sign Up
-        </Typography>
-        <Typography color="gray" className="mt-1 font-normal">
-          Nice to meet you! Enter your details to register.
-        </Typography>
-        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
-          <div className="mb-1 flex flex-col gap-6">
-            <Typography variant="h6" color="blue-gray" className="-mb-3">
-              Your Name
-            </Typography>
-            <Input
-              size="lg"
-              placeholder="name@mail.com"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-            />
-            <Typography variant="h6" color="blue-gray" className="-mb-3">
-              Your Email
-            </Typography>
-            <Input
-              size="lg"
-              placeholder="name@mail.com"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-            />
-            <Typography variant="h6" color="blue-gray" className="-mb-3">
-              Password
-            </Typography>
-            <Input
-              type="password"
-              size="lg"
-              placeholder="********"
-              className=" !border-t-blue-gray-200 focus:!border-t-gray-900"
-              labelProps={{
-                className: "before:content-none after:content-none",
-              }}
-            />
-          </div>
-          <Checkbox
-            label={
-              <Typography
-                variant="small"
-                color="gray"
-                className="flex items-center font-normal"
-              >
-                I agree the
-                <a
-                  href="#"
-                  className="font-medium transition-colors hover:text-gray-900"
-                >
-                  &nbsp;Terms and Conditions
-                </a>
-              </Typography>
-            }
-            containerProps={{ className: "-ml-2.5" }}
-          />
-          <Button className="mt-6" fullWidth>
-            sign up
-          </Button>
-          <Typography color="gray" className="mt-4 text-center font-normal">
-            Already have an account?{" "}
-            <a href="#" className="font-medium text-gray-900">
-              Sign In
-            </a>
-          </Typography>
-        </form>
-      </Card>
+      <div className="Inscription">
+      <h2 className="text-3xl text-center">Inscription</h2>
+      <form>
+        <div className="input-group mb-5">
+          <input type="text" name="nom" id="nom" placeholder="nom & prenom"/>
+        </div>
+        <div className="input-group mb-5">
+          <input type="email" name="email" id="email" placeholder="email"/>
+        </div>
+        <div className="input-group mb-5">
+          <input type="number" name="telephone" id="telephone" placeholder="telephone"/>
+        </div>
+        <div className="input-group mb-6">
+          <input className='mb-3' type="password" name="password" id="password" placeholder="mot passe"/>
+          <p className="signup text-xl">j'ai deja un compte.
+        <Link to="/connexion" className="text-xl">Connecté</Link>
+      </p>
+        </div>
+        
+        <button className=" mb-4"><Link to="">Inscris</Link></button>
+      </form>
+    </div>
     );
   }

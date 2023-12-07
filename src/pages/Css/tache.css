@@ -1,5 +1,13 @@
 .tache{
-    height: 80px;
-    width: 70%;
+    height: 60px;
+    background-color: #fff;
+    width: 100%;
     box-shadow: 2px 1px 4px grey;
+}
+
+.tache button{
+   height:  40px;
+}
+.tache .icon{
+    margin-right: 5px;
 }

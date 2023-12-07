@@ -1,0 +1,62 @@
+.Inscription {
+    width: 420px;
+    border-radius: 0.75rem;
+    background-color: rgba(17, 24, 39, 1);
+    padding: 2rem;
+    margin: auto;
+    margin-top: 70px;
+    color: rgba(243, 244, 246, 1);
+    box-shadow: 5px 5px 5px rgba(167, 139, 250);
+  }
+  
+  
+  .Inscription form {
+    margin-top: 1.5rem;
+    width: 89%;
+  }
+  
+  .Inscription .input-group {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-left: 10%;
+  }
+
+  
+  .Inscription .input-group input {
+    width: 100%;
+    border: 1px solid rgb(94, 113, 143);
+    outline: 0;
+    background:none;
+    padding: 0.75rem 1rem;
+    color: rgba(243, 244, 246, 1);
+  }
+  
+  .Inscription .input-group input:focus {
+    border-color: #a78bfa;
+  }
+  
+  .Inscription .oublié {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    color: #fff;
+    margin: 8px 0 14px 0;
+  }
+  
+  .Inscription .oublié a:hover, .signup a:hover {
+    text-decoration: underline rgba(167, 139, 250, 1);
+  }
+  
+  .Inscription button {
+    display: block;
+    width: 100%;
+    background-color: rgba(167, 139, 250, 1);
+    padding: 0.75rem;
+    text-align: center;
+    color: rgba(17, 24, 39, 1);
+    border: none;
+    border-radius: 0.375rem;
+  }
+  
+  
