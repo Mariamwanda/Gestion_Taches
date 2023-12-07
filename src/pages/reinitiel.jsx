@@ -1,12 +1,13 @@
 // PasswordResetForm.js
 import React from 'react';
 import './Css/reinit.css'
+import { Link } from 'react-router-dom';
 
 function Reinitial (){
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 ">
     <div className="bg-white p-8 rounded shadow-md w-96 Reinitial">
-      <h2 className="text-2xl  font-semibold mb-4">Réinitialisation du mot de passe</h2>
+      <h2 className="text-3xl text-center text-[#111827]  font-semibold mb-4">Réinitialisation</h2>
       <form>
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="newPassword">
@@ -33,10 +34,10 @@ function Reinitial (){
           />
         </div>
         <button
-          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
+          className=" text-white py-2 px-4 rounded focus:outline-none "
           type="submit"
         >
-          Réinitialiser le mot de passe
+          <Link to="/connexion">Réinitialiser le mot de passe</Link>
         </button>
       </form>
     </div>

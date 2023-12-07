@@ -16,7 +16,7 @@ const Connexion = () => {
           <Link to="/reinitial">Mot de passe oublié ?</Link>
         </div>
       </div>
-      <button className=" mb-4"><Link to="">Connexion</Link></button>
+      <button className=" mb-4"><Link to="/dashboard">Connexion</Link></button>
     </form>
     <p className="signup text-xl">Vous avez un Compte?
       <Link to="/inscription" className="text-xl">Créer un</Link>

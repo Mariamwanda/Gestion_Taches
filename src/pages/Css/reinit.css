@@ -1,12 +1,12 @@
-.Reinitial{
+.Reinitial form{
     width: 420px;
     border-radius: 0.75rem;
-    background-color: rgba(17, 24, 39, 1);
+    
     padding: 2rem;
-    margin: auto;
-    margin-top: 100px;
+    
+    
     color: rgba(243, 244, 246, 1);
-    box-shadow: 5px 5px 5px rgba(167, 139, 250);
+    box-shadow: 2px 3px 1px rgba(167, 139, 250);
 }
 
 .Reinitial input{
@@ -15,7 +15,7 @@
     outline: 0;
     background:none;
     padding: 0.75rem 1rem;
-    color: rgba(243, 244, 246, 1);
+    color: #111827;
 }
 
 .Reinitial label{
