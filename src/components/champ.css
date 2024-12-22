@@ -1,0 +1,12 @@
+.Dashbord{
+    background: linear-gradient(to bottom, #3B82F6, #EF4444);
+    width: 50%;
+    margin: 0 auto;
+    margin-top:50px;
+}
+
+.Dashbord .icon{
+    margin-right:5px;
+    white:50%;
+}
+

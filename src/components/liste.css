@@ -1,0 +1,13 @@
+.Liste{
+    color:black;
+    border-radius:20px;
+    border:1px solid black;
+    
+}
+
+
+.Liste .A{
+    color:white;
+    margin-left:20px;
+    font-size:20px;
+}
