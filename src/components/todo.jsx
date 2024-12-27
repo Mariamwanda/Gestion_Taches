@@ -13,8 +13,8 @@ function Todo() {
   const [status, setStatus] = useState("");
   const [tasks, setTasks] = useState([]);
   const [editingIndex, setEditingIndex] = useState(null);
-  const [search, setSearch] = useState(""); // Texte de recherche
-  const [filterStatus, setFilterStatus] = useState(""); // Statut à filtrer
+  const [search, setSearch] = useState(""); // pour rechercher
+  const [filterStatus, setFilterStatus] = useState(""); // ici je filtre mon statut
 
   const handleAddOrUpdateTask = () => {
     if (todo && status) {
@@ -47,7 +47,6 @@ function Todo() {
     setFilterStatus("");
   };
 
-  // Filtrage des tâches combiné (recherche + statut)
   const filteredTasks = tasks.filter((task) => {
     const matchesSearch = task.todo.toLowerCase().includes(search.toLowerCase());
     const matchesFilter = filterStatus ? task.status === filterStatus : true;
@@ -117,7 +116,7 @@ function Todo() {
             </button>
           </div>
 
-          {/* Liste des tâches */}
+          {/* ici ce sont les taches*/}
           <TacheListe
             tasks={filteredTasks}
             onEdit={handleEditTask}
