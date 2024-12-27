@@ -1,12 +1,15 @@
 .Dashbord{
-    background: linear-gradient(to bottom, #3B82F6, #EF4444);
-    width: 50%;
-    margin: 0 auto;
-    margin-top:50px;
+    padding-top:10px;
 }
 
 .Dashbord .icon{
     margin-right:5px;
     white:50%;
+}
+
+.Dashbord .ajout{
+    background-color:#333;
+    white:50px;
+    color:orange;
 }
 

@@ -1,9 +1,6 @@
 import './App.css'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import TacheListe from './components/tache'
-
-import Todo from './components/todo.jsx';
-
+import Essaie from './components/essaie.jsx';
 
 function App() {
 
@@ -11,9 +8,7 @@ function App() {
     <>
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<Todo/>} />
-      <Route path='/tacheListe' element={<TacheListe/>} />
-      
+      <Route path='/' element={<Essaie/>} />
     </Routes>
     </BrowserRouter>
     
